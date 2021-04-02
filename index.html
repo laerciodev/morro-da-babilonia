@@ -26,7 +26,7 @@
         <ul class="nav-list">
           <li class="nav-item"><a href="#about">Sobre</a></li>
           <li class="nav-item"><a href="#">Curiosidades</a></li>
-          <li class="nav-item"><a href="#">Fotos</a></li>
+          <li class="nav-item"><a href="#photos">Fotos</a></li>
           <li class="nav-item"><a href="#where-is">Onde fica?</a></li>
         </ul>
       </nav>
@@ -34,9 +34,13 @@
     <main class="main">
       <section id="about">
         <p class="text">
-          <span class="alert"
-            >Leia na voz do capitão Nascimento, por favor.</span
-          >
+          <span class="play-audio" onclick="playAudio()">
+            Leia o texto na voz do capitão Nascimento, por favor.
+            <img class="icon-bope" src="/assets/svg/bope.svg" alt="" />
+            <audio id="audio" controls>
+              <source src="/assets/audio/intro.mp3" type="audio/mpeg" />
+            </audio>
+          </span>
           O Morro da Babilônia é um morro
           <a href="#where-is">
             localizado entre os bairros de Botafogo, Urca, Leme e Copacabana</a
@@ -65,6 +69,9 @@
             alt="Imagem do Morro da Babilônia"
           />
         </picture>
+      </section>
+      <section id="photos">
+        <h2 class="title-section">Fotos</h2>
       </section>
       <section id="where-is">
         <h2 class="title-section">Onde fica?</h2>
@@ -102,6 +109,11 @@
     function play() {
       const video = document.getElementById("video");
       video.play();
+    }
+
+    function playAudio() {
+      const audio = document.getElementById("audio");
+      audio.play();
     }
   </script>
 </html>

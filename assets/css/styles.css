@@ -55,6 +55,10 @@ a {
   background-position: right center;
 }
 
+#audio {
+  display: none;
+}
+
 #about {
   color: #6a5f3c;
   padding: 30px;
@@ -62,7 +66,8 @@ a {
   justify-content: space-between;
 }
 
-#where-is {
+#where-is,
+#photos {
   padding: 0 30px;
   color: #6a5f3c;
   font-size: 20px;
@@ -72,6 +77,7 @@ a {
   font-family: "Tropa", sans-serif;
   width: 100%;
   margin-bottom: 30px;
+  user-select: none;
 }
 
 .text {
@@ -81,10 +87,19 @@ a {
   color: #fff;
 }
 
-.text .alert {
-  display: inline-block;
+.text .play-audio {
+  text-decoration: underline;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
   width: 100%;
   margin-bottom: 20px;
+  position: relative;
+}
+
+.icon-bope {
+  width: 25px;
+  margin-left: 10px;
 }
 
 .source-info {
