@@ -21,6 +21,10 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 30px;
+  background: black;
+  position: fixed;
+  z-index: 4;
+  width: 100%;
 }
 
 .title {
@@ -53,6 +57,10 @@ a {
   background-size: 25px;
   background-repeat: no-repeat;
   background-position: right center;
+}
+
+.main {
+  padding-top: 108px;
 }
 
 #onboarding .container {
@@ -94,9 +102,8 @@ a {
   color: #fff;
 }
 
-.text.attractions {
-  color: #fff;
-  width: 100%;
+.text.attractions,
+#where-is .text {
   max-width: none;
 }
 
@@ -153,6 +160,12 @@ a {
 .container.red-beach {
   display: flex;
   justify-content: space-between;
+}
+
+#where-is > .article {
+  color: #fff;
+  width: 100%;
+  max-width: none;
 }
 
 #where-is .image {
