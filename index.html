@@ -24,54 +24,127 @@
       <h1 class="title">Morro da Babilônia</h1>
       <nav class="nav-header">
         <ul class="nav-list">
+          <li class="nav-item"><a href="#onboarding">Onboarding</a></li>
           <li class="nav-item"><a href="#about">Sobre</a></li>
-          <li class="nav-item"><a href="#">Curiosidades</a></li>
-          <li class="nav-item"><a href="#photos">Fotos</a></li>
+          <li class="nav-item"><a href="#attractions">pontos turísticos</a></li>
           <li class="nav-item"><a href="#where-is">Onde fica?</a></li>
         </ul>
       </nav>
     </header>
     <main class="main">
-      <section id="about">
-        <p class="text">
-          <span class="play-audio" onclick="playAudio()">
-            Leia o texto na voz do capitão Nascimento, por favor.
-            <img class="icon-bope" src="/assets/svg/bope.svg" alt="" />
-            <audio id="audio" controls>
-              <source src="/assets/audio/intro.mp3" type="audio/mpeg" />
-            </audio>
-          </span>
-          O Morro da Babilônia é um morro
-          <a href="#where-is">
-            localizado entre os bairros de Botafogo, Urca, Leme e Copacabana</a
-          >, na cidade do Rio de Janeiro, no Brasil. Abriga duas favelas: a do
-          Morro da Babilônia e a do Chapéu Mangueira. Algumas áreas de mata
-          atlântica área de proteção ambiental (APA) dos Morros da Babilônia e
-          São João (1996). Em 10 de junho de 2009, foi inaugurada a UPP
-          Babilônia e Chapéu Mangueira, com um efetivo de 107 policiais
-          militares a serviço da população local e dos turistas. Atualmente a
-          comunidade conta com algumas obras de urbanização e infraestrutura, os
-          serviços públicos aos poucos são mais presentes, como os cursos
-          oferecidos pela Faetec, o posto de saúde as creches, entre outros.
-          <small class="source-info">
-            <a
-              target="_blank"
-              href="https://pt.wikipedia.org/wiki/Morro_da_Babilônia"
-            >
-              * Trecho retirado da Wikipédia
-            </a>
-          </small>
-        </p>
-        <picture class="mask">
+      <section id="onboarding">
+        <h2 class="title-section">Onboarding</h2>
+        <div class="container">
+          <p class="text">
+            Meu nome é Roberto Nascimento, sou capitão do Bope há decadas,
+            conhecido entre meus parceiros de guerra como Capitão Nascimento.
+            Irei guiá-lo, <span class="line-through">usuário</span>(não gosto
+            desta palavra), nesta breve viagem sobre o morro da Babilônia,
+            <span class="line-through">
+              onde subi várias vezes para trazer corpo de traficante, nada
+              pessoal.
+            </span>
+            Durante esta página alguns links estarão disponíveis para você,
+            <span class="line-through">usuário</span>, ter uma melhor
+            experiência e apreciar o aúdio da minha voz mórbida. Seja bem-vindo,
+            prepare a sua alma pois o seu corpo já me pertence.
+          </p>
           <img
-            class="image"
-            src="/assets/images/morro-da-babilonia-sobre.jpg"
-            alt="Imagem do Morro da Babilônia"
+            class="image nascimento"
+            src="/assets/images/capitao-nascimento.jpg"
+            alt="Foto do Capitão Nascimento de Tropa de Elite"
           />
-        </picture>
+        </div>
       </section>
-      <section id="photos">
-        <h2 class="title-section">Fotos</h2>
+      <section id="about">
+        <h2 class="title-section">Sobre</h2>
+        <div class="container">
+          <p class="text">
+            <span class="play-audio" onclick="playAudio()">
+              Leia o texto na voz do capitão Nascimento, por favor.
+              <img class="icon-bope" src="/assets/svg/bope.svg" alt="" />
+              <audio id="audio" controls>
+                <source src="/assets/audio/intro.mp3" type="audio/mpeg" />
+              </audio>
+            </span>
+            O Morro da Babilônia,
+            <span class="line-through">
+              em grego Babilónia, em latim...o usuário tá dormindo
+            </span>
+            <a href="#where-is">
+              é um morro localizado entre os bairros de Botafogo, Urca, Leme e
+              Copacabana</a
+            >, na cidade do Rio de Janeiro, no Brasil. A hipótese mais provável
+            quanto a origem do nome "Morro da Babilônia" vem da visão que os
+            portugueses tinham do morro visto desde a Urca. Suas altas camadas
+            de Pedras revezando com camadas de floresta nativa, mata Atlântica,
+            vistas desde o angulo da Urca, relembram no imaginário uma das sete
+            maravilhas do mundo antigo, Os Jardins Suspensos da Babilônia.
+            Abriga duas favelas: a do Morro da Babilônia e a do Chapéu
+            Mangueira. Algumas áreas de mata atlântica área de proteção
+            ambiental (APA) dos Morros da Babilônia e São João (1996). Em 10 de
+            junho de 2009, foi inaugurada a UPP Babilônia e Chapéu Mangueira,
+            com um efetivo de 107 policiais militares a serviço da população
+            local e dos turistas. Atualmente a comunidade conta com algumas
+            obras de urbanização e infraestrutura, os serviços públicos aos
+            poucos são mais presentes, como os cursos oferecidos pela Faetec, o
+            posto de saúde as creches, entre outros.
+            <small class="source-info">
+              <a
+                target="_blank"
+                href="https://pt.wikipedia.org/wiki/Morro_da_Babilônia"
+              >
+                * Trecho retirado da Wikipédia
+              </a>
+            </small>
+          </p>
+          <picture>
+            <img
+              class="image"
+              src="/assets/images/morro-da-babilonia-sobre.jpg"
+              alt="Imagem do Morro da Babilônia"
+            />
+          </picture>
+        </div>
+      </section>
+      <section id="attractions">
+        <h2 class="title-section">Pontos Turísticos</h2>
+        <h3 class="title-attraction">Trilha</h3>
+        <article class="text attractions">
+          <p>
+            A vista dispensa comentários. Lá em cima, na Pedra do Urubu, tem
+            uma bela clareira e um espaço enorme para sentar e observar a
+            vista para o Flamengo, de um lado, a praia Vermelha, onde treinam
+            os melhores homens do Bope, localizada no bairro da Urca,
+            <span class="line-through">
+              bairro onde residem militares faca na caveira, parceiro
+            </span>
+            e do outro lado, um ângulo inusitado do Pão de Açúcar. Com
+            certeza, você terá uma nova perspectiva da cidade.
+            <p>
+              O topo do Morro da Babilônia foi uma importante área militar usada para controlar
+              a entrada de embarcações na Baía de Guanabara. Até hoje existem
+              algumas casamatas que eram usadas para observação durante 2ª
+              Guerra Mundial (havia a ameaça de ataques submarinos nazistas na
+              época).
+            </p>
+          </p>
+        </article>
+        <div class="photo-gallery">
+          <div class="container-img">
+            <span class="mask">mirante do telegráfo</span>
+          </div>
+         <div class="container-img">
+           <span class="mask">mirante de copacabana</span>
+         </div>
+         <div class="container-img">
+           <span class="mask">mirante rio sul</span>
+         </div>
+         <div class="container-img">
+           <span class="mask">mirante praia vermelha</span>
+         </div>
+         
+        </div>
       </section>
       <section id="where-is">
         <h2 class="title-section">Onde fica?</h2>
@@ -93,7 +166,7 @@
             width="500"
             controls
           ></video>
-          <picture class="mask">
+          <picture>
             <img
               width="700"
               class="image"
