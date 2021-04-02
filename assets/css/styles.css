@@ -71,13 +71,20 @@ a {
 .title-section {
   font-family: "Tropa", sans-serif;
   width: 100%;
+  margin-bottom: 30px;
 }
 
-.text-about {
+.text {
   max-width: 500px;
   font-size: 16px;
   line-height: 27px;
   color: #fff;
+}
+
+.text .alert {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .source-info {
@@ -95,6 +102,21 @@ a {
 .image:hover {
   filter: sepia(100%);
   transition: 0.3s ease-in-out;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.btn-play {
+  text-decoration: underline;
+  color: #6a5f3c;
+  cursor: pointer;
+}
+
+#where-is .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 #where-is .image {

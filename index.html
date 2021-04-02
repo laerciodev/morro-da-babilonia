@@ -12,6 +12,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header class="header">
@@ -27,7 +33,10 @@
     </header>
     <main class="main">
       <section id="about">
-        <p class="text-about">
+        <p class="text">
+          <span class="alert"
+            >Leia na voz do capitão Nascimento, por favor.</span
+          >
           O Morro da Babilônia é um morro
           <a href="#where-is">
             localizado entre os bairros de Botafogo, Urca, Leme e Copacabana</a
@@ -59,14 +68,40 @@
       </section>
       <section id="where-is">
         <h2 class="title-section">Onde fica?</h2>
-        <picture class="mask">
-          <img
-            class="image"
-            src="/assets/images/morro-da-babilonia-onde-fica.jpg"
-            alt="Imagem área do Morro da Babilônia com destaque em vermelho"
-          />
-        </picture>
+        <p class="text">
+          Pensando em subir o morro da Babilônia?!
+          <br />
+          <span class="line-through">Então, senta o dedo nessa p*rra!!</span>
+          <br />
+          <span class="btn-play" onclick="play()">
+            Aperte o play
+            <i class="fas fa-play"></i>
+          </span>
+          e escuta o recado do Capitão Nascimento.
+        </p>
+        <div class="container">
+          <video
+            id="video"
+            src="/assets/videos/onde-fica.mp4"
+            width="500"
+            controls
+          ></video>
+          <picture class="mask">
+            <img
+              width="700"
+              class="image"
+              src="/assets/images/morro-da-babilonia-onde-fica.jpg"
+              alt="Imagem área do Morro da Babilônia com destaque em vermelho"
+            />
+          </picture>
+        </div>
       </section>
     </main>
   </body>
+  <script>
+    function play() {
+      const video = document.getElementById("video");
+      video.play();
+    }
+  </script>
 </html>
