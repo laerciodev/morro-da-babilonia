@@ -18,6 +18,7 @@ a {
 
 .header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 30px;
@@ -34,8 +35,20 @@ a {
   cursor: pointer;
 }
 
+@media (max-width: 698px) {
+  .title {
+    font-size: 24px;
+  }
+}
+
 .nav-header {
   font-family: "Tropa";
+}
+
+@media (max-width: 698px) {
+  .nav-header {
+    display: none;
+  }
 }
 
 .nav-list {
@@ -60,15 +73,34 @@ a {
 }
 
 .main {
-  padding-top: 108px;
+  padding-top: 84px;
+}
+
+@media (min-width: 698px) {
+  .main {
+    padding-top: 108px;
+  }
 }
 
 #onboarding .container {
   display: flex;
 }
 
+@media (max-width: 698px) {
+  #onboarding .container {
+    flex-direction: column;
+  }
+}
+
 .image.nascimento {
   margin-left: 90px;
+}
+
+@media (max-width: 698px) {
+  .image.nascimento {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
 
 #audio {
@@ -162,6 +194,31 @@ a {
   justify-content: space-between;
 }
 
+@media (max-width: 698px) {
+  #about .container {
+    flex-direction: column;
+  }
+
+  #where-is .container {
+    flex-direction: column;
+  }
+
+  #about .image {
+    margin-top: 20px;
+  }
+}
+
+#video {
+  max-width: 100%;
+}
+
+@media (min-width: 698px) {
+  #video {
+    max-width: none;
+    width: 500px;
+  }
+}
+
 #where-is > .article {
   color: #fff;
   width: 100%;
@@ -184,6 +241,16 @@ a {
   height: 250px;
   cursor: pointer;
   position: relative;
+}
+
+@media (max-width: 698px) {
+  .photo-gallery {
+    justify-content: center;
+  }
+
+  .photo-gallery .container-img {
+    margin-top: 20px;
+  }
 }
 
 .container-img:nth-child(1) {
